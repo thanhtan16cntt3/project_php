@@ -20,8 +20,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Products:</h6>
-                <a class="collapse-item" href="buttons.html">Add Product</a>
-                <a class="collapse-item" href="cards.html">Manage Products</a>
+                <a class="collapse-item" href="">Add Product</a>
+                <a class="collapse-item" href="/Project_web_admin/Products">Manage Products</a>
             </div>
         </div>
     </li>
@@ -38,7 +38,7 @@
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Brands</span></a>
     </li>
-    
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
     <!-- Sidebar Toggler (Sidebar) -->

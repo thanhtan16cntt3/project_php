@@ -18,6 +18,7 @@ class Home extends Controller
     public function Logout()
     {
         $this->unsetSession('userID');
+        $this->destroySession();
         $this->redirect('SignIn');
     }
 }
