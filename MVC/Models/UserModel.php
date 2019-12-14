@@ -15,9 +15,9 @@ class UserModel extends Database
         return true;
     }
 
-    public function InsertNewUser($username, $fullname, $email, $password)
+    public function InsertNewUser($username, $fullname, $email, $password, $img = "")
     {
-        $query = "INSERT INTO users VALUES (NULL, '$username', '$fullname', '$email', '$password')";
+        $query = "INSERT INTO users VALUES (NULL, '$username', '$password', '$email', '$img', '$fullname')";
 
         $result = false;
         if (mysqli_query($this->conn, $query)) {
@@ -34,7 +34,7 @@ class UserModel extends Database
             if (mysqli_num_rows($row) > 0) {
                 $result = mysqli_fetch_assoc($row);
                 $dbPassword = $result['password'];
-                $userID = $result['id_user'];
+                $userID = $result['user_id'];
                 if (password_verify($password, $dbPassword)) {
                     return ['status' => 'ok', 'userID' => $userID];
                 } else {

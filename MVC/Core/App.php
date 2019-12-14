@@ -21,7 +21,7 @@
 				unset($arr[1]);
 			}
 
-			//Xu ly params
+			//Xu ly params 
         	$this->params = $arr?array_values($arr):[];
 
 			call_user_func_array([$this->Controller, $this->Action], $this->Params);
