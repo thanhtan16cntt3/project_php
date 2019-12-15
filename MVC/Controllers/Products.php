@@ -21,9 +21,4 @@ class Products extends Controller
 
     }
 
-    public function showProducts()
-    {
-        $row = $this->productModel->showProducts();
-        var_dump($row);
-    }
 }

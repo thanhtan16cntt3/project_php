@@ -15,7 +15,7 @@
                         <tr>
                             <th style="width:10%;">Photo</th>
                             <th>Product Name</th>
-                            <th>Rate</th>
+                            <th>Price</th>
                             <th>Quantity</th>
                             <th>Brand</th>
                             <th>Category</th>
@@ -28,7 +28,7 @@
                     <tr>
                         <th><img width="80" src="<?php echo $row['product_image']; ?>"></th>
                         <th><?php echo $row['product_name'] ?></th>
-                        <th><?php echo number_format($row['rate']) . " VND" ?></th>
+                        <th><?php echo number_format($row['price']) . " VND" ?></th>
                         <th><?php echo $row['quantity'] ?></th>
                         <th><?php echo strtoupper($row['brand_name']) ?></th>
                         <th><?php echo strtoupper($row['categories_name']) ?></th>
